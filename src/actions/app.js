@@ -27,6 +27,8 @@ export const navigate = (path) => (dispatch) => {
 };
 
 const loadPage = (page) => (dispatch) => {
+	import('../components/my-view1.js');
+/*
   switch(page) {
     case 'view1':
       import('../components/my-view1.js').then((module) => {
@@ -44,7 +46,7 @@ const loadPage = (page) => (dispatch) => {
       page = 'view404';
       import('../components/my-view404.js');
   }
-
+*/
   dispatch(updatePage(page));
 };
 
